@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adwidian.ramaniapi.projectkp.MenuActivity">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="MAP"
+        android:textSize="25dp"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonmap"
+        android:onClick="buttonmap"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="LIST MARKER"
+        android:textSize="25dp"
+        android:layout_below="@+id/buttonmap"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonlist"
+        android:onClick="buttonList"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:textSize="25dp"
+        android:layout_below="@+id/buttonlist"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonAbout"
+        android:onClick="buttonAbout"/>
+
+</RelativeLayout>
