@@ -5,28 +5,32 @@ package com.adwidian.ramaniapi.projectkp;
  */
 
 public class ModelFungsi {
-    private int gambar;
-    private String judul;
+    private String nama;
+    private String alamat;
     private Double latitude;
     private Double longitude;
 
-    public ModelFungsi(int gambar, String judul, Double latitude, Double longitude){
-        this.gambar = gambar;
-        this.judul = judul;
+    public ModelFungsi(String nama, String alamat, Double latitude, Double longitude) {
+        this.nama = nama;
+        this.alamat = alamat;
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public int getGambar(){
-        return gambar;
+    public String getNama() {
+        return nama;
     }
-    public String getJudul(){
-        return judul;
+
+    public String getAlamat() {
+        return alamat;
     }
-    public Double getLatitude(){
+
+    public Double getLatitude() {
         return latitude;
     }
-    public Double getLongitude(){
+
+
+    public Double getLongitude() {
         return longitude;
     }
 }

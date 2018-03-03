@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.adwidian.ramaniapi.projectkp.ListMarkerActivity">
+    android:layout_height="wrap_content"
+    tools:context="com.adwidian.ramaniapi.projectkp.RecycleViewActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,8 +24,17 @@
         android:padding="10dp"
         android:layout_below="@+id/daftar"
         android:id="@+id/recyclerV"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="5dp">
     </android.support.v7.widget.RecyclerView>
 
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        />
 
 </RelativeLayout>

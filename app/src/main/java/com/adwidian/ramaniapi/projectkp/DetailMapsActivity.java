@@ -30,7 +30,7 @@ import org.oscim.tiling.source.bitmap.DefaultSources;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DetailActivity extends AppCompatActivity implements RMAccountManager.RMAccountManagerListener {
+public class DetailMapsActivity extends AppCompatActivity implements RMAccountManager.RMAccountManagerListener {
 
     private MapView mMapView;
     private Map mMap;
@@ -46,7 +46,7 @@ public class DetailActivity extends AppCompatActivity implements RMAccountManage
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_maps_detail);
 
         setLatLong();
 
@@ -125,7 +125,7 @@ public class DetailActivity extends AppCompatActivity implements RMAccountManage
 //      OSciMap4TileSource tileSource = new OSciMap4TileSource();
         TileSource tileSource = DefaultSources.OPENSTREETMAP.build();
 
-        mMapView.setMapPosition(new GeoPoint(-6.983805, 110.410544), 15);
+        mMapView.setMapPosition(new GeoPoint(getLatitude(), getLongitude()), 15);
         TileCache mCache = new TileCache(this, null, "dataopenstreetmaps-tiles.db");
         mCache.setCacheSize(512 * (1 << 10));
         tileSource.setCache(mCache);
@@ -140,8 +140,8 @@ public class DetailActivity extends AppCompatActivity implements RMAccountManage
 
     private void updateLocationMarker() {
         currentLocation = new Location("");
-        currentLocation.getLatitude();
-        currentLocation.getLongitude();
+        getLatitude();
+        getLongitude();
         if (markerRealLoc == null) {
             markerRealLoc = new Marker(mMapView, this);
             markerRealLoc.setMarkerSpot(MarkerSymbol.HotspotPlace.CENTER);
@@ -152,7 +152,7 @@ public class DetailActivity extends AppCompatActivity implements RMAccountManage
             drawableCurrentLoc = getResources().getDrawable(R.drawable.marker_red);
 
         markerRealLoc.add("Real Location", "Puskesmas Poncol",
-                new GeoPoint(currentLocation.getLatitude(), currentLocation.getLongitude()),
+                new GeoPoint(getLatitude(), getLongitude()),
                 drawableCurrentLoc, false);
     }
 
