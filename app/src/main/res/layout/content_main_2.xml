@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AboutActivity"
+    tools:showIn="@layout/app_bar_main_2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puskesmas Marker Project"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#050505"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:id="@+id/textview1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/maps_ico"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textview1"
+            android:layout_marginTop="15dp"
+            android:id="@+id/gmb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pusker atau singkatan dari Puskesmas Marker/Traker atau singkatan dari Travel Marker adalah aplikasi berbasis android yang memungkinkan user untuk mencari puskesmas/tempat wisata yang ada di Semarang secara online. Selain itu aplikasi ini juga memungkinkan user untuk melihat daftar puskesmas/tempat wisata yang ada di Semarang. Aplikasi ini juga menyediakan routing yang digunakan user untuk sampai ke puskemas/tempat wisata dengan mudah. "
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/gmb"
+            android:typeface="serif" />
+
+
+</RelativeLayout>
