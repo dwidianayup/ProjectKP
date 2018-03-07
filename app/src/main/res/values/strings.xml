@@ -29,4 +29,9 @@
     <string name="title_activity_register">Sign Up</string>
     <string name="register">Register</string>
     <string name="logout">Logout</string>
+
+    <!-- Validation Error -->
+    <string name="err_name">the name field is required</string>
+    <string name="err_email">the email must be valid email address</string>
+    <string name="err_password">the password must be at least 6 character</string>
 </resources>
