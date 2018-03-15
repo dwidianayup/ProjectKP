@@ -35,18 +35,25 @@
         </activity>
         <activity
             android:name=".AboutActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="About Puskesmas Marker">
         </activity>
-        <activity android:name=".DetailMapsActivity" />
+        <activity
+            android:name=".DetailMapsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Detail Maps"/>
         <activity
             android:name=".RecycleViewActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="List Puskesmas">
         </activity>
         <activity
             android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:label="Sign in" />
         <activity
             android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:label="Register" />
         <activity
             android:name=".MainActivity"
